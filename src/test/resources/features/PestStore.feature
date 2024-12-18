@@ -21,5 +21,5 @@ Feature:  PetStore Api
     And valido que el cuerpo de la respuesta contiene el id <id> y petId <petId>
     Examples:
       | id  | petId |
-      | 5   | 10    |
-      | 6   | 20    |
+      | 51   | 30    |
+      | 60   | 40    |
