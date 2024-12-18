@@ -65,8 +65,8 @@ public class PetStoreStep {
         int responseId = response.body().path("id");
         int responsePetId = response.body().path("petId");
 
-        Assert.assertEquals("El id no coincide con el esperado", id, responseId);
-        Assert.assertEquals("El petId no coincide con el esperado", petId, responsePetId);
+        Assert.assertEquals("Validacion de ID", id, responseId);
+        Assert.assertEquals("Validacion petID", petId, responsePetId);
 
         System.out.println("ID en respuesta: " + responseId);
         System.out.println("petId en respuesta: " + responsePetId);

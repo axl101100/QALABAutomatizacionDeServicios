@@ -4,7 +4,7 @@ Feature:  PetStore Api
   @crearOrden
   Scenario Outline: Crear orden en PestStore
     Given la url es "https://petstore.swagger.io/v2"
-    When  creo la mascota con ID <id> y PetID <petId> y quantity <cantidad>
+    When  creo la orden con ID <id> y PetID <petId> y quantity <cantidad>
     Then valido el codigo de respuesta sea 200
     And valido que el cuerpo de la respuesta contiene el id <id> y petId <petId>
     Examples:
@@ -20,6 +20,6 @@ Feature:  PetStore Api
     Then valido el codigo de respuesta sea 200
     And valido que el cuerpo de la respuesta contiene el id <id> y petId <petId>
     Examples:
-      | id  | petId |
+      | id  | petId  |
       | 51   | 30    |
       | 60   | 40    |

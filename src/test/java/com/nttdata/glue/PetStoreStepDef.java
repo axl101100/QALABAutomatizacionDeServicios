@@ -32,8 +32,8 @@ public class PetStoreStepDef {
 
     }
 
-    @When("creo la mascota con ID {int} y PetID {int} y quantity {int}")
-    public void creoLaMascotaConIDIdYPetIDPetIdYQuantityCantidad(int id, int petId, int cantidad) {
+    @When("creo la orden con ID {int} y PetID {int} y quantity {int}")
+    public void creoLaOrdenConIDIdYPetIDPetIdYQuantityCantidad(int id, int petId, int cantidad) {
         tienda.crearOrden(id,petId,cantidad);
     }
 
